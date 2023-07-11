@@ -3,6 +3,20 @@ function addToCart(ID_cart) {
   // Select the h3 element with the specified gameID and get its innerHTML
   const gameTitle = document.querySelector('#' + ID + ' h3').innerHTML;
 
+  // Check if the game title already exists in the kartContents array
+  let kartContents = JSON.parse(localStorage.getItem('Kart'));
+  if (!Array.isArray(kartContents)) {
+    kartContents = [];
+  }
+  if (kartContents.includes(gameTitle)) {
+    // If the game title already exists, show a toast message to inform the user
+    var toastElList = document.querySelectorAll('.toast');
+    var toastEl = toastElList[0];
+    var toast = new bootstrap.Toast(toastEl, { autohide: true });
+    toast.show();
+    return;
+  }
+
   // Create a new list item element and set its innerHTML to the game title
   var listItem = document.createElement('li');
   listItem.classList.add('list-group-item');
@@ -11,10 +25,6 @@ function addToCart(ID_cart) {
 
   // Select the cart contents element and append the new list item to it
   const cartContents = document.querySelector('#cartContents');
-  let kartContents = JSON.parse(localStorage.getItem('Kart'));
-  if (!Array.isArray(kartContents)) {
-    kartContents = [];
-  }
   if (cartContents !== null) {
     cartContents.appendChild(listItem);
     // Show a toast notification
