@@ -42,4 +42,10 @@ function initializeCartList() {
   });
 }
 
+function trashCart() {
+  const cart = document.querySelector('#cartContents');
+  cart.innerHTML = '';
+  localStorage.removeItem('Kart');
+}
+
 initializeCartList();
