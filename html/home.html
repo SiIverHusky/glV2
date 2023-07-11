@@ -2,14 +2,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game Library</title>
+    <title>Gamify Library</title>
+    <link rel="icon" href="../dpad-fill.svg">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
 <body class="bg-dark text-light">
-    <header class="row">
-        <div class="navbar justify-content-start d-flex justify-content-between bg-light text-dark px-5 px-sm-3">
-            <h1 class="fw-bold col-sm-10">Game Library</h1>
+    <header class="row fixed-top">
+        <div class="navbar justify-content-start d-flex justify-content-between bg-light text-dark px-5">
+            <h1 class="fw-bold col-sm-10"><i class="bi bi-dpad-fill"></i> GamifyLib</h1>
             <button type="button" class="btn btn-primary btn-lg x-5 y-4 col-sm-2" data-bs-toggle="offcanvas" data-bs-target="#cartView" aria-controls="cartView">
                 <i class="bi bi-cart3"></i>
             </button>
@@ -32,15 +33,15 @@
         </div>
     </div>
     <br>
-    <div class="container">
-        <div class="row">
+    <div class="container mt-5">
+        <div class="row py-3">
             <div class="col-sm-12 col-md-7">
                 <h2>Welcome to our game library!</h2>
                 <p class="fw-bold">Here you can find a wide selection of games to play and enjoy.</p>
             </div>
             <div class="col-sm-12 col-md-5">
                 <div>
-                  <button class="btn btn-lg btn-secondary w-100" data-bs-toggle="modal" data-bs-target="#gameAdd_window">Add Game to Library</button>
+                  <button class="btn btn-lg btn-secondary w-100 py-4" data-bs-toggle="modal" data-bs-target="#gameAdd_window">Add Game to Library</button>
                 </div>
             </div>
         </div>
@@ -262,7 +263,7 @@
         </div>
     </div>
     <footer class="pt-2 text-center">
-        <p>&copy; 2023 Game Library</p>
+        <p>&copy; 2023 Gamify <i class="bi bi-dpad"></i></p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <script src="../js/main.js"></script>
