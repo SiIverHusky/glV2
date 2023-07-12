@@ -21,6 +21,9 @@ function addToCart(ID_cart) {
   var listItem = document.createElement('li');
   listItem.classList.add('list-group-item');
   listItem.classList.add('list-group-item-action');
+  listItem.ondblclick = function() {
+    removeFromCart(gameTitle);
+  };
   listItem.innerHTML = gameTitle;
 
   // Select the cart contents element and append the new list item to it
@@ -56,6 +59,17 @@ function trashCart() {
   const cart = document.querySelector('#cartContents');
   cart.innerHTML = '';
   localStorage.removeItem('Kart');
+}
+
+function removeFromCart(gameTitle) {
+  const cart = document.querySelector('#cartContents');
+  const itemToRemove = Array.from(cart.children).find(item => item.innerHTML === gameTitle);
+  if (itemToRemove) {
+    cart.removeChild(itemToRemove);
+    let kartContents = JSON.parse(localStorage.getItem('Kart'));
+    kartContents = kartContents.filter((item) => item !== gameTitle);
+    localStorage.setItem('Kart', JSON.stringify(kartContents));
+  }
 }
 
 initializeCartList();
