@@ -48,70 +48,7 @@
         </div>
         <!--Games Library Cards-->
         <div class="row d-flex flex-row gy-4 gx-3">
-            <div class="col-12 col-md-4">
-                <div id="game_413150" class="card">
-                    <img class="" src="https://cdn.cloudflare.steamstatic.com/steam/apps/413150/header.jpg" alt="">
-                    <div class="card-body">
-                        <h3 class="card-title fw-bold text-uppercase">Stardew Valley</h3>
-                        <p class="card-text">You've inherited your grandfather's old farm plot in Stardew Valley. Armed with hand-me-down tools and a few coins, you set out to begin your new life. Can you learn to live off the land and turn these overgrown fields into a thriving home?</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <button type="button" id="game_413150_details" class="btn btn-sm btn-outline-secondary flex-grow-1" data-bs-toggle="modal" data-bs-target="#game_413150_details_window"><i class="bi bi-info-circle"></i> View Details</button>
-                            <button type="button" id="game_413150_cart" class="btn btn-sm btn-outline-success flex-grow-1" onclick="addToCart(this.id)"><i class="bi bi-bag-plus"></i> Add to cart</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-4">
-                <div id="game_945360" class="card">
-                    <img class="" src="https://cdn.cloudflare.steamstatic.com/steam/apps/945360/header.jpg" alt="">
-                    <div class="card-body">
-                        <h3 class="card-title fw-bold text-uppercase">Among Us</h3>
-                        <p class="card-text">An online and local party game of teamwork and betrayal for 4-15 players...in space!</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <button type="button" id="game_945360_details" class="btn btn-sm btn-outline-secondary flex-grow-1" data-bs-toggle="modal" data-bs-target="#game_945360_details_window"><i class="bi bi-info-circle"></i> View Details</button>
-                            <button type="button"  data-id="OLO" id="game_945360_cart" class="btn btn-sm btn-outline-success flex-grow-1" onclick="addToCart(this.id)"><i class="bi bi-bag-plus"></i> Add to cart</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-4">
-                <div id="game_1145360" class="card">
-                    <img class="" src="https://cdn.cloudflare.steamstatic.com/steam/apps/1145360/header.jpg" alt="">
-                    <div class="card-body">
-                        <h3 class="card-title fw-bold text-uppercase">Hades</h3>
-                        <p class="card-text">Defy the god of the dead as you hack and slash out of the Underworld in this rogue-like dungeon crawler from the creators of Bastion, Transistor, and myre.</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <button type="button" id="game_1145360_details" class="btn btn-sm btn-outline-secondary flex-grow-1" data-bs-toggle="modal" data-bs-target="#game_1145360_details_window"><i class="bi bi-info-circle"></i> View Details</button>
-                            <button type="button" id="game_1145360_cart" class="btn btn-sm btn-outline-success flex-grow-1" onclick="addToCart(this.id)"><i class="bi bi-bag-plus"></i> Add to cart</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-4">
-                <div id="game_367520" class="card">
-                    <img class="" src="https://cdn.cloudflare.steamstatic.com/steam/apps/367520/header.jpg" alt="">
-                    <div class="card-body">
-                        <h3 class="card-title fw-bold text-uppercase">Hollow Knight</h3>
-                        <p class="card-text">Forge your own path in Hollow Knight! An epic action adventure through a vast ruined kingdom of insects and heroes. Explore twisting caverns, battle tainted creatures and befriend bizarre bugs, all in a classic, hand-drawn 2D style.</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <button type="button" id="game_367520_details" class="btn btn-sm btn-outline-secondary flex-grow-1" data-bs-toggle="modal" data-bs-target="#game_367520_details_window"><i class="bi bi-info-circle"></i> View Details</button>
-                            <button type="button" id="game_367520_cart" class="btn btn-sm btn-outline-success flex-grow-1" onclick="addToCart(this.id)"><i class="bi bi-bag-plus"></i> Add to cart</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-4">
-                <div id="game_620" class="card">
-                    <img class="" src="https://cdn.cloudflare.steamstatic.com/steam/apps/620/header.jpg" alt="">
-                    <div class="card-body">
-                        <h3 class="card-title fw-bold text-uppercase">Portal 2</h3>
-                        <p class="card-text">The &quot;Perpetual Testing Initiative&quot; has been expanded to allow you to design co-op puzzles for you and your friends!</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <button type="button" id="game_620_details" class="btn btn-sm btn-outline-secondary flex-grow-1" data-bs-toggle="modal" data-bs-target="#game_620_details_window"><i class="bi bi-info-circle"></i> View Details</button>
-                            <button type="button" id="game_620_cart" class="btn btn-sm btn-outline-success flex-grow-1" onclick="addToCart(this.id)"><i class="bi bi-bag-plus"></i> Add to cart</button>
-                        </div>
-                    </div>
-                </div>
+            <div id="games-container" class="">
             </div>
         </div>
         <!--Modals-->
@@ -134,122 +71,8 @@
               </div>
             </div>
           </div>
-        <div class="modal fade" id="game_413150_details_window" tabindex="-1" aria-labelledby="game_413150_details_window_label" aria-hidden="true">
-            <div class="modal-dialog modal-xl modal-dialog-centered">
-              <div class="modal-content bg-dark">
-                <div class="modal-header">
-                  <h1 class="modal-title fs-5 fw-bold text-uppercase" id="game_413150_details_window_label">Stardew Valley</h1>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body text-center">
-                    <div class="ratio ratio-16x9">
-                    <iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/ot7uXNQskhs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe loading="lazy">
-                    </div>
-                    <ul class="list-group">
-                        <li class="list-group-item"><strong>Genre</strong>: Indie</li>
-                        <li class="list-group-item"><strong>Developer</strong>: ConcernedApe</li>
-                        <li class="list-group-item"><strong>Publisher</strong>: ConcernedApe</li>
-                        <li class="list-group-item"><strong>Release Date</strong> 26 Feb, 2016</li>
-                        <li class="list-group-item"><strong>Metacritic Rating</strong>: 89</li>
-                        <li class="list-group-item"><strong>Platform</strong>: Windows, macOS, Linux</li>
-                        <li class="list-group-item"><strong>Language</strong>: English, German, Spanish - Spain, Japanese, Portuguese - Brazil, Russian, Simplified Chinese, French, Italian, Hungarian, Korean, Turkish</li>
-                    </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="modal fade" id="game_945360_details_window" tabindex="-1" aria-labelledby="game_945360_details_window_label" aria-hidden="true">
-            <div class="modal-dialog modal-xl modal-dialog-centered">
-              <div class="modal-content bg-dark">
-                <div class="modal-header">
-                  <h1 class="modal-title fs-5 fw-bold text-uppercase" id="game_945360_details_window_label">Among Us</h1>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body text-center">
-                    <div class="ratio ratio-16x9">
-                    <iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/NSJ4cESNQfE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe loading="lazy">
-                    </div>
-                    <ul class="list-group">
-                        <li class="list-group-item"><strong>Genre</strong>: Casual</li>
-                        <li class="list-group-item"><strong>Developer</strong>: Innersloth</li>
-                        <li class="list-group-item"><strong>Publisher</strong>: Innersloth</li>
-                        <li class="list-group-item"><strong>Metacritic Rating</strong>: 85</li>
-                        <li class="list-group-item"><strong>Platform</strong>: Windows</li>
-                        <li class="list-group-item"><strong>Language</strong>: Inglés, Portugués - Brasil, Español - Latinoamérica, Español - España, Coreano, Ruso, Francés, Italiano, Alemán, Holandés, Japonés, Portugués - Portugal, Chino simplificado, Chino tradicional</li>
-                    </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="modal fade" id="game_1145360_details_window" tabindex="-1" aria-labelledby="game_1145360_details_window_label" aria-hidden="true">
-            <div class="modal-dialog modal-xl modal-dialog-centered">
-              <div class="modal-content bg-dark">
-                <div class="modal-header">
-                  <h1 class="modal-title fs-5 fw-bold text-uppercase" id="game_1145360_details_window_label">Hades</h1>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body text-center">
-                    <div class="ratio ratio-16x9">
-                    <iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/91t0ha9x0AE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe loading="lazy">
-                    </div>
-                    <ul class="list-group">
-                        <li class="list-group-item"><strong>Genre</strong>: Action</li>
-                        <li class="list-group-item"><strong>Developer</strong>: Supergiant Games</li>
-                        <li class="list-group-item"><strong>Publisher</strong>: Supergiant Games</li>
-                        <li class="list-group-item"><strong>Metacritic Rating</strong>: 93</li>
-                        <li class="list-group-item"><strong>Platform</strong>: Windows, macOS</li>
-                        <li class="list-group-item"><strong>Language</strong>: English<strong>*</strong>, French, Italian, German, Spanish - Spain, Korean, Portuguese - Brazil, Russian, Simplified Chinese, Polish, Japanese<br><strong>*</strong>languages with full audio support</li>
-                    </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="modal fade" id="game_367520_details_window" tabindex="-1" aria-labelledby="game_367520_details_window_label" aria-hidden="true">
-            <div class="modal-dialog modal-xl modal-dialog-centered">
-              <div class="modal-content bg-dark">
-                <div class="modal-header">
-                  <h1 class="modal-title fs-5 fw-bold text-uppercase" id="game_367520_details_window_label">Hollow Knight</h1>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body text-center">
-                    <div class="ratio ratio-16x9">
-                    <iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/UAO2urG23S4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe loading="lazy">
-                    </div>
-                    <ul class="list-group">
-                        <li class="list-group-item"><strong>Genre</strong>: Action</li>
-                        <li class="list-group-item"><strong>Developer</strong>: Team Cherry</li>
-                        <li class="list-group-item"><strong>Publisher</strong>: Team Cherry</li>
-                        <li class="list-group-item"><strong>Metacritic Rating</strong>: 87</li>
-                        <li class="list-group-item"><strong>Platform</strong>: Windows, macOS, Linux</li>
-                        <li class="list-group-item"><strong>Language</strong>: English<strong>*</strong>, French<strong>*</strong>, German<strong>*</strong>, Spanish - Spain<strong>*</strong>, Korean<strong>*</strong>, Simplified Chinese<strong>*</strong>, Italian<strong>*</strong>, Portuguese - Brazil<strong>*</strong>, Russian<strong>*</strong>, Japanese<strong>*</strong><br><strong>*</strong>languages with full audio support</li>
-                    </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="modal fade" id="game_620_details_window" tabindex="-1" aria-labelledby="game_620_details_window_label" aria-hidden="true">
-            <div class="modal-dialog modal-xl modal-dialog-centered">
-              <div class="modal-content bg-dark">
-                <div class="modal-header">
-                  <h1 class="modal-title fs-5 fw-bold text-uppercase" id="game_620_details_window_label">Portal 2</h1>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body text-center">
-                    <div class="ratio ratio-16x9">
-                    <iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/tax4e4hBBZc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe loading="lazy">
-                    </div>
-                    <ul class="list-group">
-                        <li class="list-group-item"><strong>Genre</strong>: Action</li>
-                        <li class="list-group-item"><strong>Developer</strong>: Valve</li>
-                        <li class="list-group-item"><strong>Publisher</strong>: Valve</li>
-                        <li class="list-group-item"><strong>Metacritic Rating</strong>: 95</li>
-                        <li class="list-group-item"><strong>Platform</strong>: Windows, macOS, Linux</li>
-                        <li class="list-group-item"><strong>Language</strong>: English<strong>*</strong>, French<strong>*</strong>, German<strong>*</strong>, Spanish - Spain<strong>*</strong>, Czech, Danish, Dutch, Finnish, Hungarian, Italian, Japanese, Korean, Norwegian, Polish, Portuguese - Portugal, Romanian, Russian<strong>*</strong>, Simplified Chinese, Swedish, Thai, Traditional Chinese, Turkish, Bulgarian, Greek, Portuguese - Brazil, Spanish - Latin America, Ukrainian<br><strong>*</strong>languages with full audio support</li>
-                        </ul>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div id="modals-container">
+        </div>
     </div>
     <!--Toast-->
     <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
@@ -267,6 +90,7 @@
         <p>&copy; 2023 Gamify <i class="bi bi-dpad"></i></p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="../js/dynamic.js"></script>
     <script src="../js/main.js"></script>
 </body>
 </html>

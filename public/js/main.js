@@ -18,17 +18,18 @@ function addToCart(ID_cart) {
     return;
   }
 
-  // Create a new list item element and set its innerHTML to the game title
+  // Create a new list item element and set its data-title attribute to the game title
   var listItem = document.createElement('li');
   listItem.classList.add('list-group-item');
   listItem.classList.add('list-group-item-action');
+  listItem.dataset.title = gameTitle;
   const removeButton = document.createElement('button');
   removeButton.classList.add('btn');
   removeButton.classList.add('btn-sm');
   removeButton.classList.add('btn-danger');
   removeButton.classList.add('float-end');
   removeButton.innerHTML = '<i class="bi bi-trash3"></i>';
-  removeButton.onclick = () => removeFromCart(gameTitle);
+  listItem.onclick = () => removeFromCart(gameTitle);
   listItem.appendChild(removeButton); // Append the button to the list item
   listItem.innerHTML += gameTitle; // Add the game title to the list item
 
@@ -76,7 +77,7 @@ function removeFromCart(gameTitle) {
   const itemCount = document.querySelector('#itemCount');
   console.log('Removing ' + gameTitle + ' from cart')
   const cart = document.querySelector('#cartContents');
-  const itemToRemove = Array.from(cart.children).find(item => item.innerHTML === gameTitle);
+  const itemToRemove = Array.from(cart.children).find(item => item.dataset.title === gameTitle);
   if (itemToRemove) {
     const removeButton = itemToRemove.querySelector('button');
     cart.removeChild(itemToRemove);
