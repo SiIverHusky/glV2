@@ -60,7 +60,27 @@ def api2JSON(appids):
             print(f'Writing {appid} to steam.json\n')
 
     with open(json_path, 'w') as f:
-        json.dump(steam_dict, f)
+        json.dump(steam_dict, f, indent=4)
+
+def updateJSON(appids):
+    # Check if the file exists and is not empty
+    if os.path.exists(json_path) and os.stat(json_path).st_size > 0:
+        with open(json_path, 'r') as f:
+            steam_dict = json.load(f)
+    else:
+        return
+
+    for appid in appids:
+        if str(appid) in steam_dict:
+            steam_data = clean_steam_data(fetch_steam(appid))
+            steam_dict[str(appid)].update(steam_data)
+            print(f'Writing {appid} to steam.json\n')
+        else:
+            print(f'{appid} is not in steam.json')
+
+    with open(json_path, 'w') as f:
+        json.dump(steam_dict, f, indent=4)
+    
 
 if __name__ == '__main__':
     appids = input('Enter app IDs separated by commas: ').strip()
@@ -71,6 +91,11 @@ if __name__ == '__main__':
             print('steam.json deleted')
         else:
             print('steam.json does not exist')
+    elif appids.lower() == 'update':
+        appids = input('Updating the app IDs separated by commas: ').strip()
+        appids = appids.split(',')
+        appids = [int(appid.strip()) for appid in appids]
+        updateJSON(appids)
     else:
         appids = appids.split(',')
         appids = [int(appid.strip()) for appid in appids]

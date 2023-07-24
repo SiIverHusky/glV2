@@ -1,1 +1,111 @@
-{"413150": {"id": 413150, "name": "Stardew Valley", "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/413150/header.jpg", "description": "You've inherited your grandfather's old farm plot in Stardew Valley. Armed with hand-me-down tools and a few coins, you set out to begin your new life. Can you learn to live off the land and turn these overgrown fields into a thriving home?", "video": "https://www.youtube.com/embed/ot7uXNQskhs", "genres": "Indie, RPG, Simulation", "developer": ["ConcernedApe"], "publisher": ["ConcernedApe"], "release_date": "26 Feb, 2016", "rating": 89, "platforms": "windows, mac, linux", "language": "English, German, Spanish - Spain, Japanese, Portuguese - Brazil, Russian, Simplified Chinese, French, Italian, Hungarian, Korean, Turkish"}, "945360": {"id": 945360, "name": "Among Us", "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/945360/header.jpg", "description": "An online and local party game of teamwork and betrayal for 4-15 players...in space!", "video": "https://www.youtube.com/embed/NSJ4cESNQfE", "genres": "Casual", "developer": ["Innersloth"], "publisher": ["Innersloth"], "release_date": "16 Nov, 2018", "rating": 85, "platforms": "windows", "language": "English, Portuguese - Brazil, Spanish - Latin America, Spanish - Spain, Korean, Russian, French, Italian, German, Dutch, Japanese, Portuguese - Portugal, Simplified Chinese, Traditional Chinese"}, "1145360": {"id": 1145360, "name": "Hades", "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/1145360/header.jpg", "description": "Defy the god of the dead as you hack and slash out of the Underworld in this rogue-like dungeon crawler from the creators of Bastion, Transistor, and Pyre.", "video": "https://www.youtube.com/embed/91t0ha9x0AE", "genres": "Action, Indie, RPG", "developer": ["Supergiant Games"], "publisher": ["Supergiant Games"], "release_date": "17 Sep, 2020", "rating": 93, "platforms": "windows, mac", "language": "English<strong>*</strong>, French, Italian, German, Spanish - Spain, Korean, Portuguese - Brazil, Russian, Simplified Chinese, Polish, Japanese<br><strong>*</strong>languages with full audio support"}, "367520": {"id": 367520, "name": "Hollow Knight", "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/367520/header.jpg", "description": "Forge your own path in Hollow Knight! An epic action adventure through a vast ruined kingdom of insects and heroes. Explore twisting caverns, battle tainted creatures and befriend bizarre bugs, all in a classic, hand-drawn 2D style.", "video": "https://www.youtube.com/embed/UAO2urG23S4", "genres": "Action, Adventure, Indie", "developer": ["Team Cherry"], "publisher": ["Team Cherry"], "release_date": "24 Feb, 2017", "rating": 87, "platforms": "windows, mac, linux", "language": "English<strong>*</strong>, French<strong>*</strong>, German<strong>*</strong>, Spanish - Spain<strong>*</strong>, Korean<strong>*</strong>, Simplified Chinese<strong>*</strong>, Italian<strong>*</strong>, Portuguese - Brazil<strong>*</strong>, Russian<strong>*</strong>, Japanese<strong>*</strong><br><strong>*</strong>languages with full audio support"}, "620": {"id": 620, "name": "Portal 2", "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/620/header.jpg", "description": "The &quot;Perpetual Testing Initiative&quot; has been expanded to allow you to design co-op puzzles for you and your friends!", "video": "https://www.youtube.com/embed/tax4e4hBBZc", "genres": "Action, Adventure", "developer": ["Valve"], "publisher": ["Valve"], "release_date": "18 Apr, 2011", "rating": 95, "platforms": "windows, mac, linux", "language": "English<strong>*</strong>, French<strong>*</strong>, German<strong>*</strong>, Spanish - Spain<strong>*</strong>, Czech, Danish, Dutch, Finnish, Hungarian, Italian, Japanese, Korean, Norwegian, Polish, Portuguese - Portugal, Romanian, Russian<strong>*</strong>, Simplified Chinese, Swedish, Thai, Traditional Chinese, Turkish, Bulgarian, Greek, Portuguese - Brazil, Spanish - Latin America, Ukrainian<br><strong>*</strong>languages with full audio support"}}
+{
+    "413150": {
+        "id": 413150,
+        "name": "Stardew Valley",
+        "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/413150/header.jpg",
+        "description": "You've inherited your grandfather's old farm plot in Stardew Valley. Armed with hand-me-down tools and a few coins, you set out to begin your new life. Can you learn to live off the land and turn these overgrown fields into a thriving home?",
+        "video": "https://www.youtube.com/embed/ot7uXNQskhs",
+        "genres": "Indie, RPG, Simulation",
+        "developer": [
+            "ConcernedApe"
+        ],
+        "publisher": [
+            "ConcernedApe"
+        ],
+        "release_date": "26 Feb, 2016",
+        "rating": 89,
+        "platforms": "windows, mac, linux",
+        "language": "English, German, Spanish - Spain, Japanese, Portuguese - Brazil, Russian, Simplified Chinese, French, Italian, Hungarian, Korean, Turkish"
+    },
+    "1145360": {
+        "id": 1145360,
+        "name": "Hades",
+        "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/1145360/header.jpg",
+        "description": "Defy the god of the dead as you hack and slash out of the Underworld in this rogue-like dungeon crawler from the creators of Bastion, Transistor, and Pyre.",
+        "video": "https://www.youtube.com/embed/91t0ha9x0AE",
+        "genres": "Action, Indie, RPG",
+        "developer": [
+            "Supergiant Games"
+        ],
+        "publisher": [
+            "Supergiant Games"
+        ],
+        "release_date": "17 Sep, 2020",
+        "rating": 93,
+        "platforms": "windows, mac",
+        "language": "English<strong>*</strong>, French, Italian, German, Spanish - Spain, Korean, Portuguese - Brazil, Russian, Simplified Chinese, Polish, Japanese<br><strong>*</strong>languages with full audio support"
+    },
+    "367520": {
+        "id": 367520,
+        "name": "Hollow Knight",
+        "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/367520/header.jpg",
+        "description": "Forge your own path in Hollow Knight! An epic action adventure through a vast ruined kingdom of insects and heroes. Explore twisting caverns, battle tainted creatures and befriend bizarre bugs, all in a classic, hand-drawn 2D style.",
+        "video": "https://www.youtube.com/embed/UAO2urG23S4",
+        "genres": "Action, Adventure, Indie",
+        "developer": [
+            "Team Cherry"
+        ],
+        "publisher": [
+            "Team Cherry"
+        ],
+        "release_date": "24 Feb, 2017",
+        "rating": 87,
+        "platforms": "windows, mac, linux",
+        "language": "English<strong>*</strong>, French<strong>*</strong>, German<strong>*</strong>, Spanish - Spain<strong>*</strong>, Korean<strong>*</strong>, Simplified Chinese<strong>*</strong>, Italian<strong>*</strong>, Portuguese - Brazil<strong>*</strong>, Russian<strong>*</strong>, Japanese<strong>*</strong><br><strong>*</strong>languages with full audio support"
+    },
+    "620": {
+        "id": 620,
+        "name": "Portal 2",
+        "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/620/header.jpg",
+        "description": "The &quot;Perpetual Testing Initiative&quot; has been expanded to allow you to design co-op puzzles for you and your friends!",
+        "video": "https://www.youtube.com/embed/tax4e4hBBZc",
+        "genres": "Action, Adventure",
+        "developer": [
+            "Valve"
+        ],
+        "publisher": [
+            "Valve"
+        ],
+        "release_date": "18 Apr, 2011",
+        "rating": 95,
+        "platforms": "windows, mac, linux",
+        "language": "English<strong>*</strong>, French<strong>*</strong>, German<strong>*</strong>, Spanish - Spain<strong>*</strong>, Czech, Danish, Dutch, Finnish, Hungarian, Italian, Japanese, Korean, Norwegian, Polish, Portuguese - Portugal, Romanian, Russian<strong>*</strong>, Simplified Chinese, Swedish, Thai, Traditional Chinese, Turkish, Bulgarian, Greek, Portuguese - Brazil, Spanish - Latin America, Ukrainian<br><strong>*</strong>languages with full audio support"
+    },
+    "945360": {
+        "id": 945360,
+        "name": "Among Us",
+        "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/945360/header.jpg",
+        "description": "An online and local party game of teamwork and betrayal for 4-15 players...in space!",
+        "video": "https://www.youtube.com/embed/NSJ4cESNQfE",
+        "genres": "Casual",
+        "developer": [
+            "Innersloth"
+        ],
+        "publisher": [
+            "Innersloth"
+        ],
+        "release_date": "16 Nov, 2018",
+        "rating": 85,
+        "platforms": "windows",
+        "language": "English, Portuguese - Brazil, Spanish - Latin America, Spanish - Spain, Korean, Russian, French, Italian, German, Dutch, Japanese, Portuguese - Portugal, Simplified Chinese, Traditional Chinese"
+    },
+    "730": {
+        "id": 730,
+        "name": "Counter-Strike: Global Offensive",
+        "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/730/header.jpg",
+        "description": "Counter-Strike: Global Offensive (CS: GO) expands upon the team-based action gameplay that it pioneered when it was launched 19 years ago. CS: GO features new maps, characters, weapons, and game modes, and delivers updated versions of the classic CS content (de_dust2, etc.).",
+        "video": "https://www.youtube.com/embed/RzZ2bWZ_8Ho",
+        "genres": "Action, Free to Play",
+        "developer": [
+            "Valve",
+            "Hidden Path Entertainment"
+        ],
+        "publisher": [
+            "Valve"
+        ],
+        "release_date": "21 Aug, 2012",
+        "rating": 83,
+        "platforms": "windows, mac, linux",
+        "language": "Czech, Danish, Dutch, English<strong>*</strong>, Finnish, French, German, Hungarian, Italian, Japanese, Korean, Norwegian, Polish, Portuguese - Portugal, Portuguese - Brazil, Romanian, Russian, Simplified Chinese, Spanish - Spain, Swedish, Thai, Traditional Chinese, Turkish, Bulgarian, Ukrainian, Greek, Spanish - Latin America, Vietnamese<br><strong>*</strong>languages with full audio support"
+    }
+}

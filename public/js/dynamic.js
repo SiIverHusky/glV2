@@ -45,7 +45,7 @@ function generateGameCards(gamesData) {
                     <li class="list-group-item"><strong>Genre</strong>: ${game.genres}</li>
                     <li class="list-group-item"><strong>Developer</strong>: ${game.developer}</li>
                     <li class="list-group-item"><strong>Publisher</strong>: ${game.publisher}</li>
-                    <li class="list-group-item"><strong>Release Date</strong> ${game.release_date}</li>
+                    <li class="list-group-item"><strong>Release Date</strong>: ${game.release_date}</li>
                     <li class="list-group-item"><strong>Metacritic Rating</strong>: ${game.rating}</li>
                     <li class="list-group-item text-capitalize"><strong>Platform</strong>: ${game.platforms}</li>
                     <li class="list-group-item"><strong>Language</strong>: ${game.language}</li>
