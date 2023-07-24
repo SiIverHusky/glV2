@@ -5,6 +5,7 @@ import os
 # Set the path to the JSON file
 json_path = 'public/js/steam.json'
 constImageURL = 'https://cdn.cloudflare.steamstatic.com/steam/apps/{appid}/header.jpg'
+constYoutubeEmbed = 'https://www.youtube.com/embed/{yt_link}'
 
 def fetch_steam(appid):
     url=f'https://store.steampowered.com/api/appdetails?appids={appid}'
@@ -19,7 +20,15 @@ def clean_steam_data(steam_data):
     cleaned_data['name'] = steam_data['name']
     cleaned_data['image'] = constImageURL.format(appid=steam_data['steam_appid'])
     cleaned_data['description'] = steam_data['short_description']
-    cleaned_data['video'] = steam_data.get('movies', [{}])[0].get('webm', {}).get('480', '')
+    print(f'\nFor {cleaned_data["name"]}')
+    vid_link = ''
+    print('Leave blank to do default')
+    vid_link = input('Enter YouTube link id: ')
+    if vid_link == '':
+        vid_link = steam_data.get('movies', [{}])[0].get('webm', {}).get('480', '')
+    else:
+        vid_link = constYoutubeEmbed.format(yt_link=vid_link)
+    cleaned_data['video'] = vid_link
     if 'genres' in steam_data:
         cleaned_data['genres'] = ', '.join([genre['description'] for genre in steam_data['genres']])
     else:

@@ -1,14 +1,19 @@
 function generateGameCards(gamesData) {
+  /**
+   * Generates game cards and modals based on the provided games data.
+   * @param {Object} gamesData - An object containing game data.
+   * @returns {void}
+   **/
     const gamesContainer = document.getElementById('games-container');
     const modalsContainer = document.getElementById('modals-container');
   
     Object.values(gamesData).forEach(game => {
       // Create the game card element
       const gameCard = document.createElement('div');
-      gameCard.classList.add('col-12', 'col-md-4');
+      gameCard.classList.add('col');
       gameCard.innerHTML = `
-        <div id="game_${game.id}" class="card">
-            <img class="img-fluid" src="${game.image}" alt="${game.name}">
+        <div id="game_${game.id}" class="card m-2">
+            <img class="card-img-top" src="${game.image}" alt="${game.name}">
             <div class="card-body">
                 <h3 class="card-title fw-bold text-uppercase">${game.name}</h3>
                 <p class="card-text">${game.description}</p>
@@ -34,6 +39,8 @@ function generateGameCards(gamesData) {
             </div>
             <div class="modal-body">
                 <div class="ratio ratio-16x9">
+                <iframe loading="lazy" width="560" height="315" src="${game.video}" title="${game.name} Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+                </div>
                 <ul class="list-group">
                     <li class="list-group-item"><strong>Genre</strong>: ${game.genres}</li>
                     <li class="list-group-item"><strong>Developer</strong>: ${game.developer}</li>
